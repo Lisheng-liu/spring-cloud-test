@@ -4,10 +4,12 @@ import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.apache.http.HttpServerConnection;
 import org.apache.http.protocol.RequestContent;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class TokenCheckFiletr extends ZuulFilter {
+@Component
+public class TokenCheckFilter extends ZuulFilter {
     @Override
     public String filterType() {
         return "pre";
@@ -15,7 +17,7 @@ public class TokenCheckFiletr extends ZuulFilter {
 
     @Override
     public int filterOrder() {
-        return 10;
+        return 1;
     }
 
     @Override

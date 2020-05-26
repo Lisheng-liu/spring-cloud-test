@@ -20,8 +20,8 @@
     <module>gateway-zuul-test</module>
     <module>provider-test</module>
     <module>consumer-test</module>
-    <module>provider-test-2</module>
     <module>eureka-server-test</module>
+      <module>spring-boot-h2</module>
   </modules>
 
 

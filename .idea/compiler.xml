@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-h2" />
+        <module name="provider-test" />
+        <module name="consumer-test" />
+        <module name="gateway-zuul-test" />
+        <module name="eureka-server-test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer-test" target="1.8" />
+      <module name="eureka-server-test" target="1.8" />
+      <module name="gateway-zuul-test" target="1.8" />
+      <module name="provider-test" target="1.8" />
+      <module name="spring-boot-h2" target="1.8" />
+      <module name="spring-cloud-test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
